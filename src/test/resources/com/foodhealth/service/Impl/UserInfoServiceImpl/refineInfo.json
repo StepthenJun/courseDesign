@@ -1,0 +1,15 @@
+{
+	"T":{},
+	"Long":1,
+	"UserInfo":{
+		"userId":1,
+		"gender":1,
+		"username":"test",
+		"hight":1.0,
+		"weight":1.0,
+		"icon":"test",
+		"likesNum":1,
+		"collectNum":1,
+		"level":1
+	}
+}

@@ -6,4 +6,10 @@ import com.foodhealth.entity.UserInfo;
 
 public interface UserInfoService extends IService<UserInfo> {
     Result refineInfo(Long id, UserInfo userInfo);
+
+    Result getlikes();
+
+    Result getcollects();
+
+    Result getInfo();
 }

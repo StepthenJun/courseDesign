@@ -2,6 +2,7 @@ package com.foodhealth.entity;
 
 
 import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;
 import com.baomidou.mybatisplus.annotation.TableName;
 import io.swagger.annotations.ApiModel;
@@ -11,9 +12,9 @@ import lombok.experimental.Accessors;
 
 @Data
 @Accessors(chain = true)
-@TableName("tb_community")
-@ApiModel("社区交流文章属性的实体类")
-public class Community {
+@TableName("tb_article")
+@ApiModel("文章属性的实体类")
+public class Article {
 
   @TableId(value = "id", type = IdType.AUTO)
   private Long id;
@@ -21,8 +22,6 @@ public class Community {
   @ApiModelProperty("用户id")
   private Long userId;
 
-  @ApiModelProperty("社区主题的id")
-  private Long communityTopicId;
 
   @ApiModelProperty("标题")
   private String title;
@@ -32,4 +31,18 @@ public class Community {
 
   @ApiModelProperty("发表的图片（如果需要的话）")
   private String image;
+
+  @TableField(exist = false)
+  private Boolean isColloct;
+
+  @TableField(exist = false)
+  private Boolean isLike;
+
+  @ApiModelProperty("点赞数量")
+  private Long likedNum;
+
+  @ApiModelProperty("收藏数量")
+  private Long collectedNum;
+
+
 }

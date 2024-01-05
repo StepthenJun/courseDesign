@@ -1,7 +1,7 @@
 package com.foodhealth.utils;
 
 import cn.hutool.core.util.StrUtil;
-import com.foodhealth.Constants.RegexPatterns;
+import com.foodhealth.constants.RegexPatterns;
 
 
 public class RegexUtils {

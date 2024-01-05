@@ -1,8 +1,20 @@
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/foodhealth?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false
+    url: jdbc:mysql://47.113.192.108:3306/foodhealth?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false
     username: root
     password: 20040816Ywj
+  servlet:
+      multipart:
+        max-file-size: 10MB
 server:
   port: 8080
+api:
+  edamam:
+    app_id: 3130ff59
+    app_key: 5689d186bf08af5665ec042bc66daa65
+    base_url: https://api.edamam.com/api/nutrition-data
+mybatis-plus:
+  type-aliases-package: com.hmdp.entity # 别名扫描包
+
+

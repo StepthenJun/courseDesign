@@ -15,40 +15,43 @@ import java.time.LocalDateTime;
 @Data
 @Accessors(chain = true)
 @TableName("tb_user_info")
-@ApiModel("用户数据的实体类")
+@ApiModel("用户信息的实体类")
 public class UserInfo {
 
-  @ApiModelProperty()
+  @ApiModelProperty("用户id")
   private Long userId;
 
-  @ApiModelProperty()
+  @ApiModelProperty("性别")
   private Integer gender;
 
-  @ApiModelProperty()
+  @ApiModelProperty("用户名称")
   private String username;
 
-  @ApiModelProperty()
+/*  @ApiModelProperty("胸围")
   private Double bust;
 
-  @ApiModelProperty()
+  @ApiModelProperty("腰围")
   private Double waist;
 
-  @ApiModelProperty()
-  private Double hips;
+  @ApiModelProperty("臀围")
+  private Double hips;*/
 
-  @ApiModelProperty()
+  @ApiModelProperty("身高")
   private Double hight;
 
-  @ApiModelProperty()
-  private LocalDateTime createTime;
+  @ApiModelProperty("体重")
+  private Double weight;
 
-  @ApiModelProperty()
-  private LocalDateTime updateTime;
-
-  @ApiModelProperty()
+  @ApiModelProperty("头像？")
   private String icon;
 
+  @TableField(exist = false)
+  private Long likesNum;
 
+  @TableField(exist = false)
+  private Long collectNum;
 
+  @ApiModelProperty("等级")
+  private Long level;
 
 }

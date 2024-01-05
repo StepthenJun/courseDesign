@@ -1,0 +1,15 @@
+{
+	"List<Article>":[
+		{
+			"id":1,
+			"userId":1,
+			"title":"test",
+			"content":"test",
+			"image":"test",
+			"isColloct":true,
+			"isLike":true,
+			"likedNum":1,
+			"collectedNum":1
+		}
+	]
+}

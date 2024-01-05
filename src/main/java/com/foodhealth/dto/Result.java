@@ -1,5 +1,7 @@
 package com.foodhealth.dto;
 
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiModel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,6 +11,7 @@ import java.util.List;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
+@ApiModel("返回结果")
 public class Result {
     private Boolean success;
     private String errorMsg;
@@ -21,9 +24,9 @@ public class Result {
     public static Result ok(Object data){
         return new Result(true, null, data, null);
     }
-    public static Result ok(List<?> data, Long total){
+    /*public static Result ok(List<?> data, Long total){
         return new Result(true, null, data, total);
-    }
+    }*/
     public static Result fail(String errorMsg){
         return new Result(false, errorMsg, null, null);
     }

@@ -17,5 +17,5 @@ public interface UserService extends IService<User> {
 
     Result verify(RegisterFormDTO registerFormDTO, HttpSession session);
 
-    Result login(LoginFormDTO loginFormDTO,HttpSession session);
+    Result login(LoginFormDTO loginFormDTO);
 }

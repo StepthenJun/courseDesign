@@ -1,4 +1,4 @@
-package com.foodhealth.Constants;
+package com.foodhealth.constants;
 
 
 public abstract class RegexPatterns {
